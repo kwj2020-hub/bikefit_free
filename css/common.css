@@ -1,0 +1,161 @@
+/*나눔스퀘어폰트설치시작*/
+@font-face{
+  font-family:"Nanum Square acB";
+  src:url(/fonts/NanumSquare_acB.ttf),url(/fonts/NanumSquare_acB.eot),url(/fonts/NanumSquare_acB.woff)
+}
+@font-face{
+  font-family:"Nanum Square acEB";
+  src:url(/fonts/NanumSquare_acEB.ttf),url(/fonts/NanumSquare_acEB.eot),url(/fonts/NanumSquare_acEB.woff)
+}
+@font-face{
+  font-family:"Nanum Square acL";
+  src:url(/fonts/NanumSquare_acL.ttf),url(/fonts/NanumSquare_acL.eot),url(/fonts/NanumSquare_acL.woff)
+}
+@font-face{
+  font-family:"Nanum Square acR";
+  src:url(/fonts/NanumSquare_acR.ttf),url(/fonts/NanumSquare_acR.eot),url(/fonts/NanumSquare_acR.woff)
+}
+@font-face{
+  font-family:"Nanum Square B";
+  src:url(/fonts/NanumSquareB.ttf),url(/fonts/NanumSquareB.eot),url(/fonts/NanumSquareB.woff)
+}
+@font-face{
+  font-family:"Nanum Square EB";
+  src:url(/fonts/NanumSquareEB.ttf),url(/fonts/NanumSquareEB.eot),url(/fonts/NanumSquareEB.woff)
+}
+@font-face{
+  font-family:"Nanum Square L";
+  src:url(/fonts/NanumSquareL.ttf),url(/fonts/NanumSquareL.eot),url(/fonts/NanumSquareL.woff)
+}
+@font-face{
+  font-family:"Nanum Square R";
+  src:url(/fonts/NanumSquareR.ttf),url(/fonts/NanumSquareR.eot),url(/fonts/NanumSquareR.woff)
+}
+/*나눔스퀘어폰트설치끝*/
+.hidden{
+  width:1px;height:1px;font-size:0;line-height:0;position:absolute;
+}
+/*상단영역시작*/
+header{
+  width:100%;float:left;position:fixed;top:0;left:0;z-index:1;
+}
+#logo{
+  width:154px;height:119px;position:absolute;top:55px;left:60px;
+}
+#logo img{
+  width:100%;
+}
+#lang{
+  position:absolute;top:60px;right:106px;
+}
+#lang_list li{
+  float:left;margin-left:14px;
+}
+#lang_list a{
+  font:1em "Nanum Square acEB";color:#fff;
+}
+#mainmenu_btn{
+  width:32px;height:24px;
+  position:absolute;top:55px;right:50px;z-index:2;
+}
+#mainmenu_btn span{
+  display:block;width:100%;height:3px;background:#fff;
+  position:absolute;left:0;
+  transition:0.5s ease-out;
+}
+#btn_bar1{
+  top:0;
+}
+#btn_bar2{
+  top:10px
+}
+#btn_bar3{
+  top:20px;
+}
+#btn_bar1.active{
+  top:10px;transform:rotate(45deg);
+}
+#btn_bar2.active{
+  opacity:0;
+}
+#btn_bar3.active{
+  top:10px;transform:rotate(-45deg);
+}
+#mainmenu{
+  width:100%;background:#262626;overflow:scroll;background-size:cover;
+  position:absolute;top:0;lefT:0;z-index:1;
+  display:none;
+}
+#mainmenu_list{
+  width:100%;height:100%;float:left;
+}
+#mainmenu_list>li{
+  width:100%;height:25%;border-bottom:1px solid #515151;box-sizing:border-box;
+  position:relative
+}
+#mainmenu_list>li:last-child{
+  border-bottom:0;
+}
+#mainmenu_list>li>a{
+  font:3.75em "Nanum Square EB";color:#98a2a6;
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+}
+.submenu_list{
+  width:100%;height:auto;background:#202020;float:left;
+  display:none;
+}
+.submenu_list>li{
+  width:100%;height:33.33%;float:left;border-bottom:1px solid #515151;box-sizing:border-box;
+  position:relative;
+}
+.submenu_list>li:last-child{
+  border-bottom:0;
+}
+.submenu_list>li>a{
+  font:2.5em "Nanum Square EB";color:#98a2a6;
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+}
+/*상단영역끝*/
+/*하단영역시작*/
+footer{
+  width:100%;position:fixed;bottom:0;left:0;
+}
+#sns{
+  width:140px;height:20px;position:absolute;bottom:60px;left:60px;
+}
+#sns_list{
+  float:left;
+}
+#sns_list li{
+  float:left;margin-right:10px;
+}
+#sns_list li:last-child{
+  margin-right:0;
+}
+#sns_list a{
+  display:block;width:20px;height:20px;border-radius:20px;background:#fff;
+  text-align:center;
+}
+#sns_list i{
+  font-size:13px;line-height:21px;
+}
+#scrolldown{
+  font:1em/16px "Nanum Square B";color:#fff;letter-spacing:0.15em;
+  position:absolute;bottom:60px;right:60px;
+}
+#scrolldown>i{
+  position:relative;top:0;left:0;
+  animation:scrolldown_ani 1s linear infinite
+}
+@keyframes scrolldown_ani{
+  0%{
+    top:-2px;
+  }
+  50%{
+    top:2px;
+  }
+  100%{
+    top:-2px;
+  }
+}
+/*하단영역끝*/

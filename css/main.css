@@ -1,0 +1,315 @@
+/*공통적용속성시작*/
+html,body{
+  height:100%;
+}
+#wrap{
+  width:100%;height:100%;float:left;position:relative;top:0;left:0;overflow:hidden;
+}
+#mainwrap{
+  width:500%;height:100%;float:left;position:relative;top:0;left:0;
+}
+section{
+  width:20%;height:100%;float:left;position:relative;top:0;left:0;
+}
+/*스크롤바시작*/
+#scrollbar_list{
+  width:100%;position:absolute;bottom:0;left:0;
+}
+#scrollbar_list>li{
+  width:20%;float:left;position:relative;text-align:center;cursor:pointer;
+  transition:0.5s ease-out;
+  opacity:0
+}
+.scrollbar_text{
+  font:0.750em/24px "Nanum Square EB";color:#fff;letter-spacing:0.25em;
+}
+.scrollbar_bar{
+  width:100%;height:10px;background:#fff;
+}
+#scrollbar_list>li.active{
+  opacity:1
+}
+/*스크롤바끝*/
+.mainborder{
+  width:100%;height:1px;background:#fff;position:absolute;top:50%;left:0;
+}
+.leftcircle{
+  width:200px;height:200px;border-radius:50%;cursor:pointer;
+  position:absolute;top:50%;left:75px;transform:translateY(-50%);
+}
+.leftcircle>a>span{
+  font:1em "Nanum Square L";color:#fff;position:absolute;top:50%;left:50%;
+}
+.circletitle1{
+  transform:translate(-50%,-125%)
+}
+.circletitle2{
+  transform:translate(-50%,25%)
+}
+
+/*원형버튼 애니메이션 효과*/
+.leftcircle>svg{
+  width:200px;height:200px;
+	position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+}
+.leftcircle>svg>circle.active{
+  stroke-dasharray:1000;stroke-dashoffset:1000;
+  animation:stroke 3s ease-out forwards;
+}
+@keyframes stroke {
+  to{
+    stroke-dashoffset:0;
+  }
+}
+/*공통적용속성끝*/
+/*첫번째슬라이드페이지시작*/
+#main1{
+  background:#000;
+}
+#mainvideo{
+  width:100%;position:absolute;top:50%;left:0;transform:translateY(-50%)
+}
+.maintitle{
+  font:1.5em "Nanum Square EB";color:#fff;letter-spacing:0.25em;
+  position:absolute;top:50%;left:50%;
+}
+#maintitle_line1{
+  transform:translate(-50%,-125%)
+}
+#maintitle_line2{
+  transform:translate(-50%,25%)
+}
+#maintitle_line1>#blue{
+  color:#0bb3d9;
+}
+#maintitle_line2>#yellow{
+  color:#cfa972;
+}
+.title_left, .title_right{
+  position:relative;
+}
+
+/*첫번째슬라이드페이지끝*/
+/*두번째슬라이드페이지시작*/
+#symptoms_list{
+  width:100%;height:100%;float:left;position:absolute;top:0;left:0;
+}
+#symptoms_list>li{
+  width:100%;height:100%;position:absolute;top:0;left:0;overflow:hidden;
+}
+#symptoms_list>li:nth-child(1){
+  background:url(/images/symptom_img0.jpg) no-repeat center;background-size:cover;
+}
+#symptoms_list>li:nth-child(2){
+  background:url(/images/symptom_img1.jpg) no-repeat center;background-size:cover;
+}
+#symptoms_list>li:nth-child(3){
+  background:url(/images/symptom_img2.jpg) no-repeat center;background-size:cover;
+}
+#symptoms_list>li:nth-child(4){
+  background:url(/images/symptom_img3.jpg) no-repeat center;background-size:cover;
+}
+#symptoms_list>li:nth-child(5){
+  background:url(/images/symptom_img4.jpg) no-repeat center;background-size:cover;
+}
+#symptoms_title{
+  font:1.5em "Nanum Square EB";color:#fff;letter-spacing:0.25em;
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-125%);
+}
+#symptoms_text{
+  font:0.875em "Nanum Square B";color:#fff;text-align:center;
+  position:absolute;top:50%;left:50%;transform:translate(-50%,25%);
+}
+#symptoms_text>a{
+  color:#fff;transition:1s ease-out;
+}
+#symptoms_text>a.active{
+  font:1em "Nanum Square EB";color:#0bb3d9
+}
+/*두번째슬라이드페이지끝*/
+/*세번째슬라이드페이지시작*/
+#why_blur_list{
+  width:100%;height:100%;float:left;
+}
+#why_blur_list>li{
+  width:100%;height:100%;position:absolute;top:0;left:0;overflow:hidden;
+}
+#why_blur_list>li:nth-child(1){
+  background:url(/images/why_img_blur.jpg) no-repeat center;background-size:cover;
+}
+#why_blur_list>li:nth-child(2){
+  background:url(/images/first_img_blur.jpg) no-repeat center;background-size:cover;
+}
+#why_img_list{
+  width:512px;height:384px;position:absolute;top:50%;left:22%;transform:translateY(-50%)
+}
+#why_img_list>li{
+  width:512px;height:384px;position:absolute;transition:0.5s ease-out;cursor:pointer;
+}
+#why_img_list>li>img{
+  width:100%;
+}
+#why_img_list>li.front{
+  top:10%;left:10%;z-index:9999;
+}
+#why_img_list>li.back{
+  top:-10%;left:-10%;z-index:0;
+}
+#why_text_list{
+  width:430px;height:430px;position:absolute;top:50%;right:22%;transform:translateY(-50%)
+}
+#why_text_list>li{
+  width:100%;height:100%;position:absolute;top:0;left:0;
+}
+.why_title{
+  font:1.5em "Nanum Square EB";color:#fff;letter-spacing:0.25em;margin-bottom:24px;position:relative;
+}
+.why_text{
+  font:0.875em "Nanum Square R";color:#fff;margin-bottom:16px;position:relative;
+}
+.viewpoint{
+  font:1em "Nanum Square B";color:#fff;letter-spacing:0.25em;
+  position:absolute;bottom:0;left:0;
+}
+.viewpoint>i{
+  letter-spacing:1em;
+}
+.viewpoint::before{
+  content:"";display:block;width:200px;height:20px;border-bottom:3px solid #fff;
+  position:absolute;bottom:-20px;left:0;
+}
+.viewpoint::after{
+  content:"";display:block;width:200px;height:20px;border-bottom:3px solid #fff;
+  position:absolute;bottom:-20px;right:-240px;
+}
+
+/*세번째슬라이드페이지끝*/
+/*네번째슬라이드페이지시작*/
+#main4{
+  background:#000;
+}
+#step_title{
+  font:1.5em "Nanum Square EB";color:#fff;letter-spacing:0.25em;position:absolute;top:234px;left:18%;
+}
+#step_icon_list{
+  position:absolute;top:229px;right:18%;
+}
+#step_icon_list>li{
+  width:75px;height:75px;border:1px solid #fff;border-radius:40px;
+  float:left;margin-right:30px;box-sizing:border-box;
+  position:relative;transition:0.3s ease;
+}
+#step_icon_list>li:last-child{
+  margin-right:0;
+}
+#step_icon_list>li>a{
+  width:100%;height:100%;float:left;
+}
+#step_icon_list>li>a>img{
+  width:40px;height:40px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;
+}
+#step_icon_list>li.active{
+  border-width:3px;
+}
+#step_slide{
+  width:100%;height:50%;position:absolute;bottom:0;left:0;overflow:hidden;
+}
+#step_slide_list{
+  width:100%;height:400%;float:left;
+  position:absolute;top:0;left:0;
+}
+#step_slide_list>li{
+  width:100%;height:25%;text-align:center;overflow:hidden;
+  position:relative;top:0;left:0;
+}
+#step_slide_list>li:nth-child(1){
+  background:url(/images/step_slide0.jpg) no-repeat center;background-size:cover;
+}
+#step_slide_list>li:nth-child(2){
+  background:url(/images/step_slide1.jpg) no-repeat center;background-size:cover;
+}
+#step_slide_list>li:nth-child(3){
+  background:url(/images/step_slide2.jpg) no-repeat center;background-size:cover;
+}
+#step_slide_list>li:nth-child(4){
+  background:url(/images/step_slide3.jpg) no-repeat center;background-size:cover;
+}
+.slide_text{
+  font:4.5em/120px "Nanum Square EB";color:#fff;text-align:left;
+  position:absolute;top:50%;left:18%;transform:translateY(-50%)
+}
+.slide_text>span{
+  position:relative;
+}
+#slide_btn_list{
+  position:absolute;top:50%;right:20px;transform:translateY(-50%)
+}
+#slide_btn_list>li{
+  width:15px;height:15px;margin-bottom:10px;
+}
+#slide_btn_list>li:last-child{
+  margin-bottom:10px;
+}
+#slide_btn_list>li>a{
+  width:15px;height:15px;float:left;
+}
+#slide_btn_list>li>span{
+  display:block;width:15px;height:15px;border:2px solid #fff;border-radius:15px;box-sizing:border-box;
+}
+#slide_btn_list>li>span.active{
+  background:#fff;
+}
+/*네번째슬라이드페이지끝*/
+/*마지막슬라이드페이지시작*/
+#main5{
+  background:#000;
+}
+#review_title{
+  font:1.5em "Nanum Square EB";color:#fff;letter-spacing:0.25em;
+  position:absolute;top:19%;left:50%;transform:translateX(-50%)
+}
+#review_text{
+  font:0.875em "Nanum Square R";color:#fff;
+  position:absolute;top:22%;left:50%;transform:translateX(-50%)
+}
+#thum_list{
+  width:98%;height:400px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  /*display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr;grid-gap:1rem;*/
+}
+#thum_list>li{
+  width:24.25%;height:100%;float:left;margin-right:1%;
+  position:relative;top:0;left:0;
+}
+#thum_list>li:last-child{
+  margin-right:0;
+}
+#thum_list>li>.img_wrap{
+  width:50%;height:100%;float:right;overflow:hidden;text-align:center;
+  position:relative;top:0;left:0;
+}
+#thum_list>li>.img_wrap>img{
+  width:400px;float:right;/*filter:brightness(50%)*/
+  position:absolute;top:50%;left:50%;margin-top:-200px;margin-left:-200px;
+}
+#thum_list>li>.img_wrap.active::before{
+  content:"";display:block;width:100%;height:100%;background:#000;opacity:0.5;
+  position:absolute;top:0;;left:0;z-index:1
+}
+#thum_list>li>.thum_title{
+  width:100%;height:auto;
+  font:1.25em "Nanum Square B";color:#fff;letter-spacing:0.2em;
+  position:absolute;bottom:10%;left:10%;z-index:1
+}
+#thum_list>li>.date{
+  font:1em/24px "Nanum Square B";color:#fff;text-align:right;
+  position:absolute;bottom:10%;right:5%;z-index:1
+}
+#thum_list>li>.arrow{
+  display:block;width:80%;height:1px;background:#fff;
+  position:absolute;bottom:5%;left:50%;transform:translateX(-50%)
+}
+#thum_list>li>.arrow::before{
+  content:"";display:block;width:0;height:0;
+  border-top:10px solid transparent;border-right:10px solid #fff;
+  position:absolute;right:0;top:50%;margin-top:-5px;transform:rotate(-45deg);
+}
